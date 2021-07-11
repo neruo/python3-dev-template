@@ -1,0 +1,31 @@
+{
+    // editor format
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    // python
+    "python.venvPath": ".venv",
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true // isort
+        },
+    },
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true, // flake8
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "88",
+        "--ignore=E203,W503,W504"
+    ],
+    "python.linting.mypyEnabled": true, // mypy
+    "python.formatting.provider": "black", // black
+    "autoDocstring.docstringFormat": "google", // docstring format
+    "python.analysis.extraPaths": [ // pylance settings
+        "./src/*",
+    ]
+}
