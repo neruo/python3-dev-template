@@ -2,6 +2,22 @@
 
 template repository for python3 development
 
+## Directory
+
+```shell
+python3-dev-template
+├── LICENSE
+├── README.md
+├── dataset
+├── poetry.lock
+├── pyproject.toml
+├── python3-dev-template
+│   ├── __init__.py
+│   ├── argument.py
+│   └── run.py
+└── tests
+```
+
 ## Create repository command memo
 
 ```shell
@@ -24,7 +40,7 @@ git clone https://gist.github.com/c7830fa9d7aa62581b91da6d4a028ae3.git python3-d
 rm -r python3-dev-template/.git
 ```
 
-## Usage
+## Development usage
 
 ```shell
 # setup poetry
