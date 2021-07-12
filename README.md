@@ -6,9 +6,14 @@ template repository for python3 development
 
 ```shell
 python3-dev-template
+├── .gitignore
+├── .vscode
+│   ├── launch.json
+│   └── settings.json
 ├── LICENSE
 ├── README.md
 ├── dataset
+│   └── .gitkeep
 ├── poetry.lock
 ├── pyproject.toml
 ├── python3-dev-template
@@ -16,6 +21,7 @@ python3-dev-template
 │   ├── argument.py
 │   └── run.py
 └── tests
+    └── .gitkeep
 ```
 
 ## Create repository command memo
