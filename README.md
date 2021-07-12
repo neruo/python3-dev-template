@@ -5,23 +5,22 @@ template repository for python3 development
 ## Directory
 
 ```shell
-python3-dev-template
-├── .gitignore
 ├── .vscode
 │   ├── launch.json
 │   └── settings.json
-├── LICENSE
-├── README.md
 ├── dataset
 │   └── .gitkeep
-├── poetry.lock
-├── pyproject.toml
 ├── python3-dev-template
 │   ├── __init__.py
 │   ├── argument.py
 │   └── run.py
-└── tests
-    └── .gitkeep
+├── tests
+│   └── .gitkeep
+├── .gitignore
+├── LICENSE
+├── README.md
+├── poetry.lock
+└── pyproject.toml
 ```
 
 ## Create repository command memo
