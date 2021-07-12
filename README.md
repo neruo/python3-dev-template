@@ -23,6 +23,10 @@ template repository for python3 development
 └── pyproject.toml
 ```
 
+## Prerequisites
+
+- Installed [Poetry](https://github.com/python-poetry/poetry) (>=1.1.7), [Git](https://git-scm.com/) (>=2.17.1)
+
 ## Create repository command memo
 
 ```shell
