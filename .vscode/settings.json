@@ -29,9 +29,14 @@
         "./src/*",
     ],
     "cSpell.words": [
+        "cuda",
         "isort",
         "jupyterlab",
+        "mlflow",
         "mypy",
-        "pytest"
+        "poethepoet",
+        "pytest",
+        "scipy",
+        "torchvision"
     ]
 }

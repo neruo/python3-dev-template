@@ -37,7 +37,7 @@ cd ~/workspace/python3-dev-template
 # setup poetry
 poetry init -n
 poetry env use python # create virtual environment
-poetry add --dev flake8 black isort mypy jupyterlab pytest mlflow
+poetry add --dev poethepoet flake8 black isort mypy jupyterlab pytest mlflow
 poetry shell # attach virtual environment
 
 # setup vscode files: launch.json settings.json
@@ -53,7 +53,8 @@ rm -r python3-dev-template/.git
 
 ```shell
 # setup poetry
-poetry env use python # create virtual environment
 poetry install # install packages
 poetry shell # attach virtual environment
+poe mkl # add numpy scipy with IntelMKL
+poe torch-cu111# #add torch+cu111, torchvision+cu111
 ```
