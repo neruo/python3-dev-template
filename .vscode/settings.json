@@ -27,5 +27,11 @@
     "autoDocstring.docstringFormat": "google", // docstring format
     "python.analysis.extraPaths": [ // pylance settings
         "./src/*",
+    ],
+    "cSpell.words": [
+        "isort",
+        "jupyterlab",
+        "mypy",
+        "pytest"
     ]
 }

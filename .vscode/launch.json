@@ -2,20 +2,42 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "Current File",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "linux": {
-                "args": [],
-            },
-            "windows": {
-                "args": [],
-            },
-            "osx": {
-                "args": [],
-            }
-        }
+            "args": [],
+        },
+        {
+            "name": "Current Test",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "args": [
+                "${workspaceRoot}/tests/**/test_${fileBasename}",
+                "-v"
+            ],
+        },
+        {
+            "name": "Run Module",
+            "type": "python",
+            "request": "launch",
+            "module": "python3-dev-template",
+            "console": "integratedTerminal",
+            "args": [],
+        },
+        {
+            "name": "Test Module",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "args": [
+                "${workspaceRoot}/tests/",
+                "-v"
+            ],
+        },
     ]
 }
