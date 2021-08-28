@@ -37,7 +37,7 @@ cd ~/workspace/python3-dev-template
 # setup poetry
 poetry init -n
 poetry env use python # create virtual environment
-poetry add --dev flake8 black isort mypy
+poetry add --dev flake8 black isort mypy jupyterlab pytest mlflow
 poetry shell # attach virtual environment
 
 # setup vscode files: launch.json settings.json
