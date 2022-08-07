@@ -1,26 +1,26 @@
 [tool.poetry]
 name = "python3-dev-template"
-version = "0.1.0"
+version = "0.2.0"
 description = "template repository for python3 development"
 authors = ["neruo <neruo>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8,<3.9"
+python = "^3.9,<3.10"
+jupyter = "^1.0.0"
+mlflow = "^1.27.0"
+pytest = "^7.1.2"
+poethepoet = "^0.16.0"
 
-[tool.poetry.dev-dependencies]
-poethepoet = "^0.10.0"
-flake8 = "^3.9.2"
-black = "^21.6b0"
-isort = "^5.9.2"
-mypy = "^0.910"
-jupyterlab = "^3.1.9"
-pytest = "^6.2.4"
-mlflow = "^1.20.1"
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = "^22.6.0"
+mypy = "^0.971"
+isort = "^5.10.1"
 
 [tool.poe.tasks]
 mkl = "pip3 install -I --no-binary :all: numpy scipy"
-torch-cu111 = "pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html"
+torch-cu111 = "pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu111"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
